@@ -24,25 +24,24 @@ OR
 
 Project Structure:
 URL-Shortener-AI/
-├── main.py # Main application entry point
-├── db.py # Database functions
-├── routers/
-│ ├── home.py # Home routes
-│ ├── shorten.py # URL shortening logic
-│ └── redirect.py # Redirect logic
-├── static/
-│ └── style.css # CSS styles
-├── README.md # Project documentation
-├── app.log # Application logs
-└── url.db # SQLite database
+-  main.py # Main application entry point
+- db.py # Database functions
+- routers/
+  - home.py # Home routes
+  - shorten.py # URL shortening logic
+  - redirect.py # Redirect logic
+- static/
+  - style.css # CSS styles
+- README.md # Project documentation
+- app.log # Application logs
+- url.db # SQLite database
 
 
 🔌 APIEndpoints    
-Method  Endpoint  Description
-GET     /         Home page with URL form
-POST    /shorten  Create a new short URL
-GET     /{code}   Redirect to the original URL
-GET     /admin    View all shortened URLs with timestamps
+Method- GET, EndPoint- /, Description- Home page with URL form
+Method- POST, EndPoint- /shorten, Description- Create a new short URL
+Method- GET, EndPoint- /{code}, Description- Redirect to the original URL
+Method- GET, EndPoint- /admin, Description- View all shortened URLs with timestamps
 
 ### Test Cases
 
