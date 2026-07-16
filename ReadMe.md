@@ -39,8 +39,11 @@ URL-Shortener-AI/
 
 🔌 APIEndpoints    
 Method- GET, EndPoint- /, Description- Home page with URL form
+
 Method- POST, EndPoint- /shorten, Description- Create a new short URL
+
 Method- GET, EndPoint- /{code}, Description- Redirect to the original URL
+
 Method- GET, EndPoint- /admin, Description- View all shortened URLs with timestamps
 
 ### Test Cases
