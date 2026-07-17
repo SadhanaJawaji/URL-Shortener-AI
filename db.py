@@ -30,8 +30,8 @@ def save_url(code, long_url, short_url):
     """
     try:
         c.execute(
-            "INSERT INTO urls (code, long_url, short_url, created_at, last_clicked_at) VALUES (?,?,?,?,?)",
-            (code, long_url, short_url, "datetime('now')", None) # created_at = current time, last_clicked_at = None initially
+            "INSERT INTO urls (code, long_url, short_url, created_at, last_clicked_at) VALUES (?,?,?, CURRENT_TIMESTAMP, ?)",
+            (code, long_url, short_url, None) # last_clicked_at = None initially
         )
         conn.commit()
         return True
