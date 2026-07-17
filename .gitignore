@@ -2,6 +2,9 @@
     *.pyc
     *.db
     *.log
-    .env
+   .env
+   .venv/
     venv/
-    .pytest_cache/
+   .pytest_cache/
+   .coverage
+    htmlcov/
